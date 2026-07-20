@@ -1,8 +1,8 @@
 class Sizer < Formula
   desc "macOS menu-bar video & image compressor — auto-convert on drop"
   homepage "https://github.com/KunmyonChoi/sizer"
-  url "https://github.com/KunmyonChoi/sizer/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "c06f0af939011b6434dc778478b60bfd2c8c4c62b393477919a71a94be7837d3"
+  url "https://github.com/KunmyonChoi/sizer/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "4199372d41102c036cae0cee7b705f4486e5c88c0f5959f52f85057e14506b4d"
   license "MIT"
   head "https://github.com/KunmyonChoi/sizer.git", branch: "main"
 
