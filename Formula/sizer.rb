@@ -42,12 +42,16 @@ class Sizer < Formula
 
   def caveats
     <<~EOS
-      실행:
-        sizer            # 터미널에서 바로 실행(권장)
-        open -a Sizer    # Applications 링크가 생긴 뒤부터 가능
+      메뉴바 앱이라 Homebrew(소스 빌드)는 /Applications 에 자동 등록하지 않습니다.
+      설치 후 아래 한 줄이면 /Applications 에 등록되고 바로 실행됩니다(게이트키퍼 경고 없음):
 
-      `sizer`를 한 번 실행하면 Applications에 Sizer.app 링크가 자동 생성되어
-      Spotlight·런치패드에서도 보입니다. 메뉴바 앱이라 Dock 아이콘은 없습니다.
+        sizer
+
+      한 번 실행하면 /Applications/Sizer.app 링크가 생겨 이후
+      Spotlight·런치패드·Finder·`open -a Sizer` 로 열 수 있습니다. (메뉴바 앱이라 Dock 아이콘은 없습니다.)
+
+      링크만 만들고 싶으면(실행 없이):
+        ln -sfn $(brew --prefix)/opt/sizer/Sizer.app /Applications/Sizer.app
 
       변환에 필요한 ffmpeg가 함께 설치됩니다.
       기본 폴더: ~/Movies/Sizer/{drop,output,processed,failed}
